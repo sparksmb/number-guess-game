@@ -1,6 +1,5 @@
 class ComputeGameResult
-  def initialize(guess, game)
-    @guess = guess
+  def initialize(game)
     @game = game
   end
 

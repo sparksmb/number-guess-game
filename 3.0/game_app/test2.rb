@@ -11,7 +11,7 @@ gs.add_game(Game.new(2))
 gs.add_game(Game.new(3))
 
 gs.games.each { |game| 
-  puts "guess #{game.guess} value #{game.value} winner #{game.winner?}"
+  puts "guess #{game.guess} value #{game.value} score #{game.score} winner #{game.winner?}"
 }
 puts "wins #{gs.wins} losses #{gs.losses} attempts #{gs.attempts}"
 

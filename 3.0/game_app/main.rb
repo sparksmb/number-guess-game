@@ -1,32 +1,23 @@
 $LOAD_PATH << File.expand_path("../game_domain")
-
 require 'entities/game'
 require 'entities/game_stats'
 require 'compute_game_result'
 require 'record_game_result'
 
-#g = Game.new
-#puts "guess 3, value #{g.value}"
+def done(input)
+  if input == "exit"
+    exit
+  end
+end
 
-#cgr = ComputeGameResult.new(3, g)
-#gc = cgr.execute
-
-#gs = GameStats.new
-#gs.add_game(gc)
-
-#puts "length: #{gs.games.length}"
-
-#g0 = gs.games[0]
-#puts "winner?: #{ g0.winner?}"
-
-
+print "\n\ntype \"exit\" to end the game\n\n"
 gs = GameStats.new
-gs.add_game(Game.new(1))
-gs.add_game(Game.new(2))
-gs.add_game(Game.new(3))
 
-gs.games.each { |game| 
-  puts "guess #{game.guess} value #{game.value} winner #{game.winner?}"
-}
-puts "wins #{gs.wins} losses #{gs.losses} attempts #{gs.attempts}"
+while true
+  print "Enter a number between 1 and 5.\n"
+  input = gets.chomp
+  done(input)
+  gs.add_game(Game.new(input.to_i))
+  puts "wins #{gs.wins} losses #{gs.losses} attempts #{gs.attempts}"
+end
 
