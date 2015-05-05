@@ -1,9 +1,9 @@
 class Game
   attr_accessor(:value, :guess, :score)
 
-  def initialize
+  def initialize(guess)
     @value = rand(1..5)
-    @guess = 0
+    @guess = guess
     @score = 0
   end
 
