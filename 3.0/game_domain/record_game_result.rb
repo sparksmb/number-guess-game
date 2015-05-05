@@ -1,5 +1,5 @@
 class RecordGameResult
-  attr_accessor: gameStats
+  attr_accessor :gameStats
 
   def initialize(gameStats)
     @gameStats = gameStats

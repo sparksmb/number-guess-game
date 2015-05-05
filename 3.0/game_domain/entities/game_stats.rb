@@ -1,5 +1,5 @@
-class
-  attr_accessor: games, wins, losses, attempts
+class GameStats
+  attr_accessor(:games, :wins, :losses, :attempts)
 
   def initialize
     @games = []
@@ -10,7 +10,7 @@ class
 
   def add_game(game)
     @games << game
-    if game.won? 
+    if game.winner? 
       @wins += 1
     else 
       @losses += 1
