@@ -15,7 +15,7 @@ class GameStats
     else 
       @losses += 1
     end
-    @attemps = @games.length
+    @attempts = @games.length
   end
 end
 

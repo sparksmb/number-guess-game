@@ -15,7 +15,9 @@ gc = cgr.execute
 gs = GameStats.new
 gs.add_game(gc)
 
-puts "length: #{gs.games.length}"
+#puts "length: #{gs.games.length}"
 
 g0 = gs.games[0]
 puts "winner?: #{ g0.winner?}"
+
+
