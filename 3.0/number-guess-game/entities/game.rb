@@ -3,7 +3,8 @@ class Game
   def initialize
     @value = 0
     @guess = 0
-    @result = ""
+    @score = 0
+    @winner? = false
   end
 
   def is_correct
