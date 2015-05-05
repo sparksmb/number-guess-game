@@ -37,6 +37,7 @@ Guess a number between 1 and 5.  If correct output "Hooray" else "Wrong".  Keep 
 
     +Value: number
     +Guess: number
+    +Score: number
     +IsWinner(): bool
     +GenerateValue(): number
 
