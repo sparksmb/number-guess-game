@@ -37,8 +37,7 @@ Guess a number between 1 and 5.  If correct output "Hooray" else "Wrong".  Keep 
 
     +Value: number
     +Guess: number
-    +Result: string
-    +IsCorrect(): bool
+    +IsWinner(): bool
     +GenerateValue(): number
 
 ### *GameStats*
